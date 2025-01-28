@@ -1,0 +1,14 @@
+[build-system]
+# Minimum requirements for the build system to execute.
+requires = ["setuptools"]
+
+[project]
+name = "py-utils"
+version = "0.1"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[project.scripts]
+convertPng2Jpg = "image.convert_png_to_jpg:main"
+
